@@ -255,3 +255,8 @@ disableHugoGeneratorInject = false
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
+
+
+[[module.mounts]]
+source = 'attachments'
+target = 'static/attachments'
