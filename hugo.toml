@@ -1,0 +1,4 @@
+baseURL = 'https://srt-ctf.zip/'
+languageCode = 'en-gb'
+title = 'SRT-CTF'
+theme = 'hello-friend-ng'
