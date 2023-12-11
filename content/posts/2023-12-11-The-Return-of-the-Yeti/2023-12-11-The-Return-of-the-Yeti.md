@@ -7,7 +7,7 @@ date:   2023-12-11 15:00:00 +0000
 
 hold your horses, this writeup isnt available Until the end of 27th December, tryhackme says so!
 
-![aoc23-sq rules](aoc23-sq_rules.png)
+![aoc23-sq rules](static/2023-12-11-The-Return-of-the-Yeti/aoc23-sq_rules.png)
 
 im just puting this here to remind myself to actualy write it 
 
