@@ -18,10 +18,16 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-   
   features:
     - search.suggest
+  custom_dir: overrides
+
+
 plugins:
   - search
   - blog:
       blog_dir: blog
+
+extra:
+  analytics:
+    provider: custom
