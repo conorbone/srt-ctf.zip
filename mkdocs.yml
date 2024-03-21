@@ -27,6 +27,9 @@ plugins:
   - search
   - blog:
       blog_dir: blog
+  - redirects:
+      redirect_maps:
+        'posts/2023/12/the-return-of-the-yeti.md': "blog/posts/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/The Return of the Yeti.md"
 
 extra:
   analytics:
