@@ -1,7 +1,7 @@
 site_name: SRT-CTF.ZIP
 site_url: https://srt-ctf.zip
 
-theme: 
+theme:
   name: material
   palette:
     # Palette toggle for dark mode
@@ -13,7 +13,7 @@ theme:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
   font:
     text: Roboto
@@ -22,15 +22,56 @@ theme:
     - search.suggest
   custom_dir: overrides
 
-
 plugins:
   - search
+  - roamlinks
+  - obsidian-support
   - blog:
       blog_dir: blog
   - redirects:
       redirect_maps:
-        'posts/2023/12/the-return-of-the-yeti.md': "blog/posts/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/The Return of the Yeti.md"
+      'posts/2023/12/the-return-of-the-yeti.md': "blog/posts/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/The Return of the Yeti.md"
+  - rss:
+      match_path: blog/blog/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+      - categories
+      - tags
+
+# Extensions
+markdown_extensions:
+  - footnotes
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - toc:
+      permalink: true
+
 
 extra:
   analytics:
     provider: custom
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js 
