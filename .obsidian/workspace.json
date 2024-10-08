@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/blog/posts/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/The Return of the Yeti.md",
+                "file": "docs/blog/posts/Writeups/Template.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/blog/posts/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/The Return of the Yeti.md",
+                "file": "docs/blog/posts/Writeups/Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/blog/posts/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/The Return of the Yeti.md",
+                "file": "docs/blog/posts/Writeups/Template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/blog/posts/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/The Return of the Yeti.md"
+                "file": "docs/blog/posts/Writeups/Template.md"
               }
             }
           }
@@ -146,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "140e991bdb69d819",
+  "active": "26b9d7ccf2dd8f75",
   "lastOpenFiles": [
+    "docs/blog/posts/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/The Return of the Yeti.md",
+    "docs/blog/posts/Writeups/Template.md",
     "site/feed_json_updated.json",
     "site/feed_json_created.json",
     "site/feed_rss_updated.xml",
@@ -158,7 +160,6 @@
     "site/blog/category/aoc23-sq",
     "site/blog/category/tryhackme/index.html",
     "site/blog/category/tryhackme",
-    "site/blog/category/ctf/index.html",
     "site/assets/images/favicon.png",
     "site/blog/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/assets/qr_codes/e94fa.png",
     "site/blog/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/assets/qr_codes/assembledQRcodes3.png",
@@ -169,7 +170,6 @@
     "site/blog/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/assets/wireshark_prototcpdecrpt.png",
     "site/blog/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/assets/wireshark_protocolHMenu.png",
     "site/blog/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/assets/wireshark_protocolFilter.png",
-    "docs/index.md",
-    "docs/blog/posts/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/The Return of the Yeti.md"
+    "docs/index.md"
   ]
 }
