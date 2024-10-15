@@ -30,7 +30,7 @@ plugins:
       blog_dir: blog
   - redirects:
       redirect_maps:
-      'posts/2023/12/the-return-of-the-yeti.md': "blog/posts/Writeups/Advent of Cyber '23 Side Quest/The Return of the Yeti/The Return of the Yeti.md"
+      'posts/2023/12/the-return-of-the-yeti.md': "blog/2023/12/11/the-return-of-the-yeti/"
   - rss:
       match_path: blog/blog/.*
       date_from_meta:
