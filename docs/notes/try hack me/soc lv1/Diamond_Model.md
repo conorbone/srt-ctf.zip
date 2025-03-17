@@ -48,4 +48,20 @@ An **Adversary Arsenal** is a set of capabilities that belong to an adversary. T
 **Service Providers**: services considered critical for the adversary availability of Type 1 and Type 2 Infrastructures, for example, Internet Service Providers, domain registrars, and webmail providers.
 
 
+## Event Meta Features
+
+  - Timestamp 
+  - Phase
+    1. Reconnaissance
+    2. Weaponization
+    3. Delivery
+    4. Exploitation
+    5. Installation
+    6. Command & Control
+    7. Actions on Objective
+  - Result 
+  - Direction
+    - Victim-to-Infrastructure, Infrastructure-to-Victim, Infrastructure-to-Infrastructure Est.
+  - Methodology
+  - Resources 
 
