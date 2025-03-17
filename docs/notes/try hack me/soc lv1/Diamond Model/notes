@@ -1,0 +1,18 @@
+---
+draft: false
+title:  "The Diamond Model"
+date: 2025-03-11 
+categories: 
+    - TryHackMe
+    - SOC-LV1
+---
+
+` SOC Level 1 > Cyber Defence Frameworks > Diamond Model `
+
+ four core features: 
+ - adversary 
+ - infrastructure
+ - capability
+ - victim
+
+ 
