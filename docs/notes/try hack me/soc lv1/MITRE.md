@@ -37,7 +37,9 @@ With  **Cyber Denial**  we prevent the adversary's ability to conduct their oper
 
 ## D3FEND 
 
->  ( D etection,  D enial, and  D isruption  F ramework  E mpowering  N etwork  D efense)
+>  ( Detection,  Denial, and  Disruption  Framework  Empowering  Network  Defense)
+
+
 
 ## AEP
 
