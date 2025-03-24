@@ -31,3 +31,5 @@ The following terms are commonly used within MISP and are related to the functio
  - Taxonomies: Classification libraries are used to tag, classify and organise information.
  - Galaxies: Knowledge base items used to label events/attributes.
  - Indicators: Pieces of information that can detect suspicious or malicious cyber activity.
+
+
