@@ -1,3 +1,7 @@
+---
+categories:
+  - SOC-LV1
+---
 # MITRE
 
 TTP: Tactics, Techniques, and Procedures

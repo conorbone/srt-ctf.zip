@@ -1,0 +1,25 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "blog",
+      "path": "[[workspace]]/D:/Notes/srt-ctf.zip/docs/blog"
+    },
+    {
+      "title": "1 Cyber Defence Frameworks",
+      "path": "[[workspace]]/D:/Notes/srt-ctf.zip/docs/notes/try hack me/soc lv1/1 Cyber Defence Frameworks"
+    },
+    {
+      "title": "2 Cyber Threat Intelligence",
+      "path": "[[workspace]]/D:/Notes/srt-ctf.zip/docs/notes/try hack me/soc lv1/2 Cyber Threat Intelligence"
+    },
+    {
+      "title": "3 Network Security and Traffic Analysis",
+      "path": "[[workspace]]/D:/Notes/srt-ctf.zip/docs/notes/try hack me/soc lv1/3 Network Security and Traffic Analysis"
+    }
+  ],
+  "frontMatter.git.enabled": true,
+  "frontMatter.framework.startCommand": "mkdocs serve"
+}

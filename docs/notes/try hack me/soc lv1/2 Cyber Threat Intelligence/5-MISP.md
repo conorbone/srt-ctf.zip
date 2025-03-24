@@ -1,3 +1,7 @@
+---
+categories:
+  - SOC-LV1
+---
 MISP (Malware Information Sharing Platform) is an open-source threat information platform that facilitates the collection, storage and distribution of threat intelligence and Indicators of Compromise (IOCs) related to malware, cyber attacks, financial fraud or any intelligence within a community of trusted members. 
 
 MISP is effectively useful for the following use cases:
