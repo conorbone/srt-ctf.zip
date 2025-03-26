@@ -26,6 +26,7 @@ plugins:
   - search
   - roamlinks
   - obsidian-support
+  - mkdocs-pdf
   - blog:
       blog_dir: blog
   - redirects:
