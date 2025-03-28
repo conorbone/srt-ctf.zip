@@ -5,3 +5,4 @@ mkdocs-roamlinks-plugin
 mkdocs-rss-plugin
 pymdown-extensions
 mkdocs-obsidian-support-plugin
+mkdocs-pdf
