@@ -1,7 +1,8 @@
 [TryHackMe Room](https://tryhackme.com/room/btwindowsinternals)
 
+[Poster Link](https://www.sans.org/posters/hunt-evil/)
 
-![hunt-evil Poster](SANS_DFPS_FOR508_v4.11_0624.pdf){ type=application/pdf }
+![](SANS_DFPS_FOR508_v4.11_0624.pdf){ type=application/pdf style="min-height:70vh;width:100%" }
 
 In this room, we will explore the core processes within a Windows system. This room aims to help you know and understand what normal behaviour within a Windows operating system is. This foundational knowledge will help you identify malicious processes running on an endpoint. 
 
