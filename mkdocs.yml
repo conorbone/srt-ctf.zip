@@ -38,6 +38,7 @@ plugins:
       categories:
       - categories
       - tags
+  - mkdocs-pdf
 
 # Extensions
 markdown_extensions:
@@ -61,7 +62,6 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - mkdocs-pdf
 
   - toc:
       permalink: true
