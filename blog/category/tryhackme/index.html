@@ -1,0 +1,1607 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://srt-ctf.zip/blog/category/tryhackme/">
+      
+      
+        <link rel="prev" href="../ctf/">
+      
+      
+        <link rel="next" href="../../archive/2023/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>TryHackMe - SRT-CTF.ZIP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  <script defer src="https://umami.raccoon-codlet.ts.net/script.js" data-website-id="7911a1ce-5e93-48ac-89a5-33ba1a0cd6ea" data-domains="srt-ctf.zip"></script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tryhackme" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="SRT-CTF.ZIP" class="md-header__button md-logo" aria-label="SRT-CTF.ZIP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SRT-CTF.ZIP
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TryHackMe
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="SRT-CTF.ZIP" class="md-nav__button md-logo" aria-label="SRT-CTF.ZIP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SRT-CTF.ZIP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/2023/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2023
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Categories
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../aoc23-sq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AOC23-SQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../ctf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CTF
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+      
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    TryHackMe
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Notes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Try hack me
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Try hack me
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Soc lv1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Soc lv1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1_2" id="__nav_3_1_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    1 Cyber Defence Frameworks
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_1_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            1 Cyber Defence Frameworks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/1%20Cyber%20Defence%20Frameworks/5-Diamond_Model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Diamond Model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/1%20Cyber%20Defence%20Frameworks/6-MITRE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MITRE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1_3" id="__nav_3_1_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2 Cyber Threat Intelligence
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_1_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            2 Cyber Threat Intelligence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/2%20Cyber%20Threat%20Intelligence/3-yara/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Yara
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/2%20Cyber%20Threat%20Intelligence/4-OpenCTI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4 OpenCTI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/2%20Cyber%20Threat%20Intelligence/5-MISP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5 MISP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/2%20Cyber%20Threat%20Intelligence/6-fridayovertime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6 fridayovertime
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/2%20Cyber%20Threat%20Intelligence/7-trooper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7 trooper
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1_4" id="__nav_3_1_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    3 Network Security and Traffic Analysis
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_1_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            3 Network Security and Traffic Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/3%20Network%20Security%20and%20Traffic%20Analysis/1-Traffic%20Analysis%20Essentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1 Traffic Analysis Essentials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/3%20Network%20Security%20and%20Traffic%20Analysis/2-Snort/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2 Snort
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1_5" id="__nav_3_1_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    4 Endpoint Security Monitoring
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_1_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            4 Endpoint Security Monitoring
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/4%20Endpoint%20Security%20Monitoring/1%20Intro%20to%20Endpoint%20Security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1 Intro to Endpoint Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/4%20Endpoint%20Security%20Monitoring/2%20Core%20Windows%20Processes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2 Core Windows Processes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/4%20Endpoint%20Security%20Monitoring/3%20Sysinternals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3 Sysinternals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/4%20Endpoint%20Security%20Monitoring/4%20Windows%20Event%20Logs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4 Windows Event Logs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/4%20Endpoint%20Security%20Monitoring/5%20Sysmon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5 Sysmon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/4%20Endpoint%20Security%20Monitoring/6%20Osquery%20The%20Basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6 Osquery The Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/4%20Endpoint%20Security%20Monitoring/7%20Wazuh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7 Wazuh
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/4%20Endpoint%20Security%20Monitoring/8%20Monday%20Monitor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8 Monday Monitor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/try%20hack%20me/soc%20lv1/4%20Endpoint%20Security%20Monitoring/9%20Retracted/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9 Retracted
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="tryhackme">TryHackMe<a class="headerlink" href="#tryhackme" title="Permanent link">¶</a></h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2023-12-11 00:00:00+00:00">December 11, 2023</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../ctf/" class="md-meta__link">CTF</a>, 
+              <a href="./" class="md-meta__link">TryHackMe</a>, 
+              <a href="../aoc23-sq/" class="md-meta__link">AOC23-SQ</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              10 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="the-return-of-the-yeti"><a class="toclink" href="../../2023/12/11/the-return-of-the-yeti/">The Return of the Yeti</a></h2>
+<p>I had the Advent of Cyber '23 on my calendar for Dec 1, and I wasn't sure what I was in for, this would be my first AOC, so, while I had some free time I logged the day before only to see there's another room released on my dashboard</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/newRoom.png" /></p>
+<p>ooh a Side Quest, I wonder if I can do something there while I wait for the main event</p>
+<h3 id="qr-code-social-media-finding-the-room"><a class="toclink" href="../../2023/12/11/the-return-of-the-yeti/#qr-code-social-media-finding-the-room">QR code social media, finding the room</a></h3>
+<p>So in the try hack me <a href="https://tryhackme.com/room/adventofcyber23sidequest">Advent of Cyber '23 Side Quest</a> room it says the first of four challenges will be a hidden room that you can get access to via QR code parts hidden in there social pages between Tuesday, 28th November and Thursday, 30th November, hey! today is the 30th, so I can go looking for them ahead of time and be prepared.</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/socialmedia.png" /></p>
+<p>so lets get looking</p>
+<p>first I try there linked-in, scroll to find what was posted on the dates provided in the clue (between Tuesday, 28th November and Thursday, 30th November)</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/socaLinkedin.png" /></p>
+<p>huh 🥚👀 lets see what that link gets us</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/qr_codes/809cd.png" /></p>
+<p>ahh, so its a bisected qr-code, I thought it would be multiple QR codes with data in them that you had to read, but this is interesting because if theres only one QR code maybe I can use the parts of it to figure out the rest, but first I should find what else is available</p>
+<p>well thay gave us a list, so lets follow it in order.</p>
+<p>There discord is up next, im already there so lets see whats up</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/discordSearch.png" /></p>
+<p>a text channel made just for this room, lets see, pinned mesages</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/discordQRCode.png" /></p>
+<p>ooh nice, now there's only one more part relaced, socal media on the list no 3</p>
+<p>Instagram, oh well time to make a fake account so I can access the posts</p>
+<blockquote>
+<p>![note] instagram is being horrid, and while writeing this I wasnt able to get a screenshot
+never the less:</p>
+</blockquote>
+<p>ah ha here it is
+<img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/qr_codes/0f93a.png" /></p>
+<p>hmm ok so I have most of the qrcode, but not that top left section,</p>
+<p>lets see what each part dose and see if we can still get the data</p>
+<h3 id="repairing-the-qr-code-early"><a class="toclink" href="../../2023/12/11/the-return-of-the-yeti/#repairing-the-qr-code-early">repairing the qr code early</a></h3>
+<p>So, what is a qr code made of ?</p>
+<p>a quick google brought me here: <a href="https://www.maketecheasier.com/how-qr-codes-work/">https://www.maketecheasier.com/how-qr-codes-work/</a></p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/qr-code-anatomy-overview.png.webp" /></p>
+<p>mmhm mhmm, lots of reading, probably important,</p>
+<p>looks like im missing one of those positioning markers, the timeing data, format info, and "content" cool</p>
+<p>what is that though?</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/QR-Character-Placement.png.webp" /></p>
+<p>ok so, im missing error correction information and maybe some data too, or atleast part of it will be missing</p>
+<p>lest smooch what I have already together, and add in a marker and some timing pattens</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/qr_codes/assembledQRcodes3.png" /></p>
+<p>k then, I cant decode that from my phone, there might be a tool to recover it maybe?</p>
+<p>google led me to this site <a href="https://merri.cx/qrazybox/">https://merri.cx/qrazybox/</a>
+a qr code Analysis and Recovery Toolkit, noice</p>
+<p>what happens when I upload my art project to it?</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/QrazyBox1.png" /></p>
+<p>detected nice, OOH tools, I like those</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/toollist.png" /></p>
+<p>yes yes yes give me the data</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/decode1.png" /></p>
+<p>wooo I did it yayyy</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/firefoxfail.png" /></p>
+<p>aww 302, redirect, shucks, wrong link. or at least its not entirely garbage, just something isnt right</p>
+<p>Lets sanity check first, is the room even there?</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/discordChat1.png" /></p>
+<p>dms :</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/discordDM1.png" /></p>
+<p>later in the main chat</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/discordChat2.png" /></p>
+<p>alright then, lets see whats wrong with my qrcode</p>
+<p>lets look at that tool list and try something else, data sequence analysis, sounds good, I know some of the data is corrupt because it was split in 4 parts and I don't think an open bracket can be part of a URL</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/qrboxParts.png" /></p>
+<p>aah yeah, that message data is being read wrong because the missing data was just replaced with white or 0 values</p>
+<p>well the edit tool lets us paint each bit as either black 1, white 0, or Gray ?</p>
+<p>lets pain the missing bits and try to get the data again</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/qrboxData2.png" /></p>
+<p>yep missing data, lets see what we can use to help us, back in that tools section there was something called Reed-Soloman Decoder, used for "errors and erasures correction"</p>
+<p>now that sounds like a wikipedia rabbithole waiting to happen so ima ignore that and just press buttons and see what happens :3</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/reed-solomondecode.png" /></p>
+<p>well thats good, theres some reed-soloman blocks detected, lets try it</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/decodefinal.png" /></p>
+<p>HA, pure skill, biggest brain ez no luck needed</p>
+<h3 id="into-the-room"><a class="toclink" href="../../2023/12/11/the-return-of-the-yeti/#into-the-room">Into the room</a></h3>
+<p>and I'm the first person in the room 0w0</p>
+<blockquote>
+<p>![note]
+hi I'm currently writing this post bursting though this room, and didn't actually take any screen shots, but here's a time line from the room showing the 4 people to get into the room before the final part of the QR code is released
+<img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/roomscore.png" />
+I got in at about 14:44 on the 30th, but I wasn't alone for long  </p>
+</blockquote>
+<p>I have to make use of this head start and get onto the tasks</p>
+<p>OK SO DONT PANIC, YOU MIGHT BE ABLE TO FINISH THIS ROOM BEFORE ANYONE ELSE</p>
+<p>what do we have (clue vision active)</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/roomInfo.png" /></p>
+<p>and the questions</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/Q-All.png" /></p>
+<p>ooh a packet dump from a wifi connection, wireshark time :3</p>
+<h4 id="wireshark"><a class="toclink" href="../../2023/12/11/the-return-of-the-yeti/#wireshark">Wireshark</a></h4>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_firstload.png" /></p>
+<p>well thats question 1 done :3</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/q1a.png" /></p>
+<blockquote>
+<p>"What's the password to access the WiFi network?"</p>
+</blockquote>
+<p>well we have alot of data here, and first thing I always do in Wireshark is get a higher level view of what's going on with its statistics tools, first thing first, what kind of data do we have, lets look at the protocol hierarchy</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_protocolHMenu.png" /></p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wiresharkProtocol1.png" /></p>
+<p>ok lots of wifi stuff, lots of data, but most interestingly a little slither of 802.1x authentication stuff, lets filter for that useing the right click menus</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_protocolFilter.png" /></p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_4wayhsEPOLfilter.png" /></p>
+<p>ooh nice, 2 <a href="https://www.wifi-professionals.com/2019/01/4-way-handshake">4-way-handshake</a> authentications, and its wep/wp2 ?</p>
+<h5 id="4-way-handshake"><a class="toclink" href="../../2023/12/11/the-return-of-the-yeti/#4-way-handshake">4-way Handshake</a></h5>
+<p>google time
+and today we get : <a href="https://securitytutorials.co.uk/how-to-capture-crack-wpa-wpa2-wireless-passwords/">https://securitytutorials.co.uk/how-to-capture-crack-wpa-wpa2-wireless-passwords/</a></p>
+<p>nice. so we can use aircrack-ng to crack this, if I save it as a pcap format, and this is a ctf so its probably in the rockyou.txt wordlist</p>
+<p><code>aircrack-ng Downloads/van.pcap -w /usr/share/wordlists/rockyou.txt</code></p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/awesomeAircrackGif.gif" />
+<img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/aircrackResults.png" /></p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/q2a.png" /></p>
+<p>heh nice, so lets put that into <a href="https://wiki.wireshark.org/HowToDecrypt802.11">Wireshark to decrypt the traffic</a>
+and go back to the protocol hierarchy to see what we have now</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_prototcpdecrpt.png" /></p>
+<p>ok so some TCP data, alot is TLS encrypted, some is RDP, and some is just unencrypted data.</p>
+<p>lets look at this another way, now we have decrypted the 802.1x data, we should see addresses, so lets go to another one of the fue tools in Wireshark I know, the Conversations view</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_convoV1.png" /></p>
+<p>ok 3 devices, 8.8.8.8 is just googles dns so we can ignore that, whats going on in TCP land?
+and lets sort by packets so we see whats most chatty</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_convoVTCP.png" /></p>
+<p>ok so; lots of small packet examples that only last a tiny amount of time, from the same device, across alot of ports, so thats a packet scanner</p>
+<p>but the other two very chatty ports are 3389 and 4444
+3389 is RDP so we were kind of expecting that, but whats 4444?</p>
+<p>cant find anything on google, lets look at the traffic</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_convoApplyasfilter.png" /></p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_filteredTCP4444.png" /></p>
+<p>oh hello is that the word power shell I see !</p>
+<p>lets follow the TCP stream</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_followTCPstream.png" /></p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_tcpstream4444.png" /></p>
+<p>oh someone has been very naughty this year</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/q3a.png" /></p>
+<p>but thay did leave me a gift</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/wireshark_tcp444_b64.png" /></p>
+<h5 id="rdp-certificate"><a class="toclink" href="../../2023/12/11/the-return-of-the-yeti/#rdp-certificate">RDP Certificate</a></h5>
+<p>looks to be the local Remote Desktop certificate in base64
+so lets reverse that with a tool provided to us by GCHQ! everyone's favourite <a href="https://gchq.github.io/CyberChef">CyberChef!</a></p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/cyberchef_b64-pfx.png" /></p>
+<p>and hey presto, we get a certificate! and its got a password... less nice,</p>
+<p>I tried Christmas the wifi password, I tried BFC123, the password in the introtext, but no luck</p>
+<p>its at this point dear reader, that I realise someone else has joined the room and has answered all the questions I have, spooked, I want to get that first place!</p>
+<p>so I try cracking that certificate to try and read the RDP data and see what it could hold
+a bit of <a href="https://stackoverflow.com/questions/53547386/how-to-run-john-ripper-attack-to-p12-password-educative-pruposes">googling</a> tells me that you can use john the ripper to crack a pkcs12</p>
+<p>so off I go crackin again, this is just a ctf so it should be relatively easy, just throw rockyou.txt at it, right?</p>
+<p>well after a long LONG time (1h)</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/john_result.png" /></p>
+<p>GAAAH, I waited on all of rockyou and an hour of john brute-forceing just to get the word I already filled in for question 3  </p>
+<p>fine, we have the certificate, lets see what we get when we now decrypt the RDP traffic</p>
+<h5 id="rdp-clipbord"><a class="toclink" href="../../2023/12/11/the-return-of-the-yeti/#rdp-clipbord">RDP Clipbord</a></h5>
+<p>google powers fire up again <a href="https://unit42.paloaltonetworks.com/wireshark-tutorial-decrypting-rdp-traffic/">i found this from unit42-palo altone tworks</a></p>
+<p>so lets get the key, then add it into wireshark</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/Wireshark_rdp1.png" /></p>
+<p>great, more layers of readable data, so lets look at the updated protocol hierarchy to see what we can read</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/Wireshark_postRDP_Protocol.png" /></p>
+<p>ooh clipbord plaintext :3 lets sort this by length to try and find big chunks of text</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/Wireshark_clipbord_email.png" /></p>
+<p>ooh</p>
+<div class="highlight"><pre><span></span><code>anks for looking into this 
+Having Frost-eau in the case is for sure great!
+ps I&#39;ll copy the weird file I found and send
+ it to you through a more secure channel
+ Regards
+ Elf McSkidy
+</code></pre></div>
+<p>so something is getting sent and we can try to figure out whats happening though the clipbord text</p>
+<p>ill go though all of the 53 packets and try and pull out all the text in timeline order</p>
+<div class="highlight"><pre><span></span><code>https://mail.google.com/mail/u/0/?tab=rm&amp;ogbl**inbox**{: .hash}
+
+1337-0
+
+hanks for looking into this 
+Having Frost-eau in the case is for sure great!
+ps I&#39;ll copy the weird file I found and send
+ it to you through a more secure channel
+ Regards
+ Elf McSkidy
+
+yetikey1.txt
+
+dpxSet-Clipboard -value (Get-Content \Desktop\secret.txt.txt)
+
+1-1f9548f
+[REDACTED - you will have to do the room yourself to get this one]
+154ef2834
+</code></pre></div>
+<p>well that looks like the rest of our questions anscered</p>
+<p><img alt="imsorryimlazy" src="../../Writeups/Advent%20of%20Cyber%20%2723%20Side%20Quest/The%20Return%20of%20the%20Yeti/assets/firefox_answers_final.png" /></p>
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
