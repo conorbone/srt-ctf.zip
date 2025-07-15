@@ -1,13 +1,12 @@
 # About
 
-Hi, im SRT, SharpRaccoonTeeth, Ryan, that one raccoon you met at a hacker event 
+Hi, I'm SRT, SharpRaccoonTeeth, Ryan, that one raccoon you met at a hacker event 
 
 Anyway, this site is in development, I'm going to try and do more writeups for CTF content 
-or Blog content, i don't know.
+or Blog content, I don't know.
 
-11/12/23 
 
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=92463" style='border:none;'></iframe>
+<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=92463" style='border:none;height: 88px;width: 329px;'></iframe>
 
 ## Events
 
