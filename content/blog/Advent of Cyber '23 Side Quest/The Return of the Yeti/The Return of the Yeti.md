@@ -1,11 +1,13 @@
 ---
 draft: false
-title:  "The Return of the Yeti"
-date: 2023-12-11 
-categories: 
-    - CTF
-    - TryHackMe
-    - AOC23-SQ
+title: The Return of the Yeti
+date: 2023-12-11
+categories:
+  - CTF
+  - TryHackMe
+  - AOC23-SQ
+aliases:
+  - blog/2023/12/11/the-return-of-the-yeti
 ---
 
 I had the Advent of Cyber '23 on my calendar for Dec 1, and I wasn't sure what I was in for, this would be my first AOC, so, while I had some free time I logged the day before only to see there's another room released on my dashboard
