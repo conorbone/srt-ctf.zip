@@ -9,6 +9,8 @@ tags:
   - Hack
   - Me
   - soclv1
+aliases:
+  - snort
 ---
 
 >  SNORT is an open-source, rule-based Network Intrusion Detection and Prevention System (NIDS/NIPS) . It was developed and still maintained by Martin Roesch, open-source contributors, and the Cisco Talos team. 
