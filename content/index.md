@@ -5,6 +5,8 @@ Hi, I'm SRT, SharpRaccoonTeeth, Ryan, that one raccoon you met at a hacker event
 Anyway, this site is in development, I'm going to try and do more writeups for CTF content 
 or Blog content, I don't know.
 
+- [Telegram](https://t.me/sweetrolethief)
+- [Signal](https://signal.me/#eu/D4TP6qCQdTKttOFNtNoMzEyzp1G9cbaOeXjX4OXVSZa-4BlFoNZEGJWzMXN-RfMk)
 
 <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=92463" style='border:none;height: 88px;width: 329px;'></iframe>
 
